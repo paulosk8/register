@@ -1,1 +1,21 @@
 <?php
+require './cliente.php';
+require './empleado.php';
+$cliente1 = new Cliente();
+$cliente1->frecuencia = "Continua ";
+echo $cliente1->frecuencia;
+$cliente1->comer();
+$cliente1->edad = 31;
+echo $cliente1->edad;
+$cliente2 = new Cliente();
+$cliente2->frecuencia = "Bajo";
+echo $cliente2->frecuencia;
+$cliente2->correo = "hola@hotmail.es";
+echo $cliente2->correo;
+$cliente2->colorCabello = "verde";
+echo $cliente2->colorCabello;
+$cliente2->comer();
+$cliente2->beber();
+$empleado1 = new Empleado();
+$empleado1->posicion = "Primero";
+echo $empleado1->posicion;

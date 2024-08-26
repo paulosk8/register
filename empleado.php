@@ -1,8 +1,7 @@
 <?php
-class empleado extends Persona{
-    $posicion;
-    $calendario;
-    function cocinar(){
-        
-    }
+class empleado extends Persona
+{
+    public $posicion;
+    public $calendario;
+    function cocinar() {}
 }

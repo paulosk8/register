@@ -1,13 +1,25 @@
 <?php
-require './cliente.php';
-require './empleado.php';
+require_once './cliente.php';
+require_once './empleado.php';
+require_once './proveedor.php';
+
 $cliente1 = new Cliente();
-$cliente1->frecuencia = "Continua ";
-echo $cliente1->frecuencia;
+$cliente1->setFrecuencia("Cotidiano");
+echo $cliente1->getFrecuencia();
 $cliente1->comer();
 $cliente1->edad = 31;
 echo $cliente1->edad;
-$cliente2 = new Cliente();
+
+$proveedor1 = new Proveedor();
+$proveedor1->colorCabello = 'rojo';
+echo $proveedor1->colorCabello;
+
+$empleado1 = new Empleado();
+$empleado1->limpiar();
+
+
+
+/* $cliente2 = new Cliente();
 $cliente2->frecuencia = "Bajo";
 echo $cliente2->frecuencia;
 $cliente2->correo = "hola@hotmail.es";
@@ -18,4 +30,4 @@ $cliente2->comer();
 $cliente2->beber();
 $empleado1 = new Empleado();
 $empleado1->posicion = "Primero";
-echo $empleado1->posicion;
+echo $empleado1->posicion; */

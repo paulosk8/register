@@ -1,7 +1,33 @@
 <?php
-class empleado extends Persona
+require_once('./persona.php');
+class Empleado extends Persona
 {
-    public $posicion;
-    public $calendario;
-    function cocinar() {}
+    private $posicion;
+    private $calendario;
+    function limpiar()
+    {
+        echo "Estoy limpiando";
+    }
+
+    public function getPosicion()
+    {
+        return $this->posicion;
+    }
+    public function setPosicion($posicion)
+    {
+        $this->posicion = $posicion;
+    }
+
+
+
+    public function setCalendario($calendario)
+    {
+        $this->calendario = $calendario;
+
+        return $this;
+    }
+    public function getCalendario()
+    {
+        return $this->calendario;
+    }
 }

@@ -1,5 +1,5 @@
 <?php
-require('./persona.php');
+require_once('./persona.php');
 class Cliente extends Persona
 {
     private $frecuencia;

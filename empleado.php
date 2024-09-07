@@ -8,6 +8,10 @@ class Empleado extends Persona
     {
         echo "Estoy limpiando";
     }
+    function comer()
+    {
+        echo "Estoy comiendo soy empleado";
+    }
 
     public function getPosicion()
     {

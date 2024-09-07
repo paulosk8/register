@@ -1,14 +1,34 @@
 <?php
 require_once('./persona.php');
-class Proveedor extends Persona
+require_once('./respiracion.php');
+class Proveedor extends Persona implements Respiracion
 {
     private $cuenta;
     private $banco;
+    function nariz()
+    {
+        echo "Paso 1: Empiezo a respirar por la nariz";
+    }
+    function faringe()
+    {
+        echo "Paso 2: Pasa el aire de la Nariz a la faringe";
+    }
+    function laringe()
+    {
+        echo "Paso 3: Pasa el aire de la faringe a la laringe";
+    }
+    function pulmones()
+    {
+        echo "Paso 4: El aire llego a los pulmones";
+    }
     function cocinar()
     {
         echo "Estoy realizando una venta";
     }
-
+    function comer()
+    {
+        echo "Estoy comiendo encebollado";
+    }
     public function setCuenta($cuenta)
     {
         $this->cuenta = $cuenta;

@@ -1,5 +1,5 @@
 <?php
-class Persona
+abstract class Persona
 {
     public $colorCabello;
     public $altura;
@@ -11,10 +11,7 @@ class Persona
     {
         echo "Voy a trabajar";
     }
-    function comer()
-    {
-        echo "Voy a comer";
-    }
+    abstract function comer();
     function dormir()
     {
         echo "Voy a dormir";

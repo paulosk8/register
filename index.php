@@ -1,4 +1,5 @@
 <?php
+require_once './persona.php';
 require_once './cliente.php';
 require_once './empleado.php';
 require_once './proveedor.php';

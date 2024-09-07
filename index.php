@@ -4,19 +4,24 @@ require_once './cliente.php';
 require_once './empleado.php';
 require_once './proveedor.php';
 
-$cliente1 = new Cliente();
+/* $cliente1 = new Cliente();
 $cliente1->setFrecuencia("Cotidiano");
 echo $cliente1->getFrecuencia();
 $cliente1->comer();
 $cliente1->edad = 31;
-echo $cliente1->edad;
+echo $cliente1->edad; */
 
 $proveedor1 = new Proveedor();
-$proveedor1->colorCabello = 'rojo';
 echo $proveedor1->colorCabello;
 
-$empleado1 = new Empleado();
-$empleado1->limpiar();
+echo $proveedor1->getBanco();
+echo $proveedor1->getCuenta();
+
+
+
+
+/* $empleado1 = new Empleado();
+$empleado1->limpiar(); */
 
 
 

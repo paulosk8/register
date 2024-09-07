@@ -5,6 +5,12 @@ class Proveedor extends Persona implements Respiracion
 {
     private $cuenta;
     private $banco;
+    function __construct()
+    {
+        echo "Clase inicializada";
+        $this->cuenta = 1722358585;
+        $this->banco = "Banco Japon";
+    }
     function nariz()
     {
         echo "Paso 1: Empiezo a respirar por la nariz";
@@ -50,5 +56,9 @@ class Proveedor extends Persona implements Respiracion
     public function getBanco()
     {
         return $this->banco;
+    }
+    function __destruct()
+    {
+        echo "Proceso destruido";
     }
 }
